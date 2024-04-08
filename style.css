@@ -22,10 +22,10 @@ html {
 }
 
 body {
-    background: var(--bg-color);
     color: var(--text-color);
 }
 
+/** Header **/
 .header {
     position: fixed;
     top: 0;
@@ -56,6 +56,8 @@ body {
     text-shadow: 0 0 40px var(--main-color);
 }
 
+/** Navbar **/
+
 .navbar a {
     font-size: 1.8rem;
     font-weight: 500;
@@ -77,9 +79,12 @@ body {
     display: none;
 }
 
+/** Home **/
 section {
     min-height: 100vh;
     padding: 10rem 12% 10rem;
+    background: linear-gradient(#080813, #272205
+    ) no-repeat;
 }
 
 .home {
@@ -257,3 +262,35 @@ span {
         width: calc(100% + 8px);
     }
 }
+
+/** About **/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(#272205, #080813 
+    ) no-repeat;
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/** Skills **/
+
