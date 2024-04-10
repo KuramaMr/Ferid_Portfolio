@@ -517,8 +517,9 @@ span {
 
 
 @media (max-width: 1285px) {
-    html {
+    html, body {
         font-size: 55%;
+        overflow-x: hidden;
     }
 }
 
