@@ -1,5 +1,5 @@
 function createGalery () {
-    const container = document.querySelector("#photos .container");
+    const container = document.querySelector("#galery .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
