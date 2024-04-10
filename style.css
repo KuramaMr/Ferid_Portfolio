@@ -586,8 +586,6 @@ span {
     }
 
     .about {
-        flex-direction: column-reverse;
-        align-items: center;
         text-align: center;
     }
 
@@ -599,4 +597,11 @@ span {
         flex-direction: column;
     }
 
+    .row {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
 }
