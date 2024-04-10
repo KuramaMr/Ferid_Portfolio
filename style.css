@@ -320,64 +320,6 @@ span {
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1600px) {
-    .photos img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1400px) {
-    .photos img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .photos {
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0 20px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .photos img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .photos img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .photos {
-        flex-direction: column;
-    }
-
-    .photos img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 500px) {
-    .photos img {
-        width: 400px;
-        height: 400px;
-    }
-}
 
 /** Gallery **/
 
@@ -423,62 +365,6 @@ span {
     border-radius: 5px;
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
-}
-
-@media (max-width: 1600px) {
-    .galery .row img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1400px) {
-    .galery .row img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .galery .row {
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0 20px;
-        width: 100%;
-        height: 100%;
-    }
-    .galery .row img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .galery .row img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .galery .row {
-        flex-direction: column;
-    }
-    .galery .row img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 500px) {
-    .galery .row img {
-        width: 400px;
-        height: 400px;
-    }
 }
 
 
@@ -629,36 +515,87 @@ span {
     cursor: pointer;
 }
 
-@media (max-width: 1600px) {
-    .contact {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
+
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .home-content {
         align-items: center;
-        justify-content: center;
-        gap: 15rem;
         text-align: center;
-
     }
-}
 
-@media (max-width: 1024px) {
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
 
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-content img {
+        width: 56vw;
+    }
+
+    .about {
+        flex-direction: column-reverse;
         align-items: center;
+        text-align: center;
     }
-}
 
-@media (max-width: 768px) {
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    .about .content {
+        margin: 0 0 50px 0;
     }
+
+    .photos {
+        flex-direction: column;
+    }
+
 }
-
-
