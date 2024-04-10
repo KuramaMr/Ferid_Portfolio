@@ -516,20 +516,112 @@ span {
 }
 
 
-@media (max-width: 1285px) {
+/** Media Queries **/
+
+@media (max-width: 1600px) {
+    html, body {
+        font-size: 65%;
+        overflow-x: hidden;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .galery .row img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1400px) {
+    html, body {
+        font-size: 60%;
+        overflow-x: hidden;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .galery .row img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
     html, body {
         font-size: 55%;
         overflow-x: hidden;
     }
+
+    .photos {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .galery .row {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .galery .row img {
+        width: 350px;
+        height: 350px;
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
+    html, body {
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+
     header {
         padding: 2rem 3%;
+    }
+
+    .photos {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .galery .row img {
+        width: 350px;
+        height: 350px;
     }
 }
 
 @media (max-width: 895px) {
+    html, body {
+        font-size: 55%;
+        overflow-x: hidden;
+    }
+
     #menu-icon {
         display: block;
     }
