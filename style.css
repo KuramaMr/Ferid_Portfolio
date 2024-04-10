@@ -537,14 +537,17 @@ span {
     .navbar {
         position: absolute;
         top: 100%;
+        text-align: center;
         right: 0;
-        width: 50%;
+        width: 100%;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
+        border-right: 2px solid var(--main-color);
         display: none;
     }
 
@@ -559,16 +562,19 @@ span {
     }
 
     .home {
+        padding: 15rem 12% 10rem;
         flex-direction: column-reverse;
+        gap: 8rem;
     }
 
     .home-content {
+        margin-top: 0;
         align-items: center;
         text-align: center;
     }
 
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 2.1rem;
     }
 
     .home-content h1 {
@@ -595,6 +601,16 @@ span {
 
     .photos {
         flex-direction: column;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .galery .row img {
+        width: 350px;
+        height: 350px;
     }
 
     .row {
