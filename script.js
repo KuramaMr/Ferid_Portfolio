@@ -3,7 +3,7 @@ function createGalery () {
     let row = document.createElement("div");
     row.classList.add("row");
 
-    fetch("data/galery.json")
+    fetch("data/groupesmv.json")
     .then(response => response.json())
     .then(data => {
         data.forEach((item, index) => {
