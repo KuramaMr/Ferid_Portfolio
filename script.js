@@ -1,27 +1,46 @@
-function createGalery () {
-    const container = document.querySelector("#galery .container");
-    let row = document.createElement("div");
-    row.classList.add("row");
+/*** Test Script ***/
 
-    fetch("data/groupesmv.json")
-    .then(response => response.json())
-    .then(data => {
-        data.forEach((item, index) => {
-            const card = document.createElement("div");
-            card.classList.add("card");
-            card.innerHTML = `
-                <img src="./images/${item.image}">
-            `;
-            row.appendChild(card);
+const slides = [
+    {
+        image: "3 groupe SMV.jpg"
+    },
+    {
+        image: "3 groupe SMV 2.jpg"
+    }
+]
 
-            if ((index + 1) % 4 == 0 || index == data.length - 1) {
-                container.appendChild(row);
-                row = document.createElement("div");
-                row.classList.add("row");
-            }
-        });
-    });
+let etape = 0;
+
+let nbr__img = slides.length;
+
+let precedent = document.querySelector('.bx-chevron-left');
+let suivant = document.querySelector('.bx-chevron-right');
+let image = document.getElementById("slide");
+
+function showSlide() {
+    image.src = "./images/" + slides[etape].image;
 }
+/* Call function to move arrowleft */
+precedent.addEventListener("click", function () {
+	if (etape == 0) {
+		etape = nbr__img - 1;
+	}
+	else {
+		etape--;
+	}showSlide();
+});
+
+/* Call function to move arrowRight */	
+suivant.addEventListener("click", function () {
+	if (etape === nbr__img - 1) {
+		etape = 0;
+	} else {
+    etape++;
+	}showSlide();
+});
+
+
+
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -57,6 +76,3 @@ document.addEventListener('click', (e) => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 });
-
-
-createGalery()

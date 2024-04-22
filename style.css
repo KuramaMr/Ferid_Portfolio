@@ -82,13 +82,14 @@ body {
 
 /** Home **/
 section { 
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 10rem 12% 10rem;
     background: linear-gradient(#080813, #272205
     ) no-repeat;
 }
 
 .home {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,6 +374,45 @@ span {
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 50px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: scale(1.20);
+}
+
+.banner-img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.banner-img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
 
 /** Parteners **/
 
