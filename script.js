@@ -2,10 +2,12 @@
 
 const slides = [
     {
-        image: "3groupeSMV.jpg"
+        image: "3groupeSMV.jpg",
+        tagLine: "3ème groupes SMV"
     },
     {
-        image: "3groupeSMV2.jpg"
+        image: "3groupeSMV2.jpg",
+        tagLine: "3ème groupes SMV"
     }
 ]
 
@@ -16,10 +18,13 @@ let nbr__img = slides.length;
 let precedent = document.querySelector('.bx-chevron-left');
 let suivant = document.querySelector('.bx-chevron-right');
 let image = document.getElementById("slide");
+let textInfo = document.getElementById("textInfo");
 
 function showSlide() {
     image.src = "./images/" + slides[etape].image;
+    textInfo.innerHTML = slides[etape].tagLine;
 }
+
 /* Call function to move arrowleft */
 precedent.addEventListener("click", function () {
 	if (etape == 0) {

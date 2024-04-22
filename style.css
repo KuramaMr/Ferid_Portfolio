@@ -381,7 +381,6 @@ span {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 100%;
 }
 
 .arrow {
@@ -414,6 +413,13 @@ span {
     border-radius: 5px;
 }
 
+#textInfo {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.8;
+}
 
 /** Parteners **/
 
