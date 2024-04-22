@@ -401,7 +401,7 @@ span {
     height: 300px;
     object-fit: cover;
     cursor: pointer;
-    background-color: #f7d827be;
+    background-color: #f7d827;
     border-radius: 5px;
     border: var(--main-color) 2px solid;
 }
