@@ -2,10 +2,10 @@
 
 const slides = [
     {
-        image: "3 groupe SMV.jpg"
+        image: "3groupeSMV.jpg"
     },
     {
-        image: "3 groupe SMV 2.jpg"
+        image: "3groupeSMV2.jpg"
     }
 ]
 

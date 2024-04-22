@@ -607,7 +607,7 @@ span {
 
 /** Media Queries **/
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
     html, body {
         font-size: 65%;
         overflow-x: hidden;
@@ -624,7 +624,7 @@ span {
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     html, body {
         font-size: 60%;
         overflow-x: hidden;
@@ -641,7 +641,7 @@ span {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     html, body {
         font-size: 55%;
         overflow-x: hidden;
