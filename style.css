@@ -97,12 +97,12 @@ body {
 /** Home **/
 section { 
     min-height: 50vh;
-    padding: 10rem 12% 10rem;
-    background: linear-gradient(#080813, #272205
-    ) no-repeat;
+    padding: 10rem 12% 36rem;
 }
 
 .home {
+    background: linear-gradient(#080813, #272205
+    ) no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
