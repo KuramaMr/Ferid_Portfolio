@@ -338,11 +338,74 @@ span {
     transition: 0.3s ease-in-out;
 }
 
+/** Caces **/
+
+.caces {
+    background: linear-gradient(#080813, #272205
+    ) no-repeat;
+    padding: 10rem 0 10rem 0;
+}
+
+.caces.content {
+    margin: 10px;
+}
+
+.caces h1 {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.caces table {
+    table-layout: fixed;
+    border-collapse: collapse var(--main-color);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.caces th, td {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #080808;
+}
+
+.caces tr:nth-child(even) {
+    background-color: #080808;
+}
+
+.caces th {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 1px;
+}
+
+.caces td {
+    color: #fff;
+}
+
+.caces td img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
 
 /** Gallery **/
 
 .galery {
-    background: linear-gradient(#080813, #272205
+    background: linear-gradient(#272205,#080813 
     ) no-repeat;
     padding: 10rem 0 10rem 0;
 }
@@ -449,7 +512,7 @@ span {
 /** Parteners **/
 
 .parteners {
-    background: linear-gradient(#272205,#080813 
+    background: linear-gradient(#080813, #272205
     ) no-repeat;
 }
 
@@ -497,7 +560,7 @@ span {
 }
 
 .contact {
-    background: linear-gradient(#080813, #272205 
+    background: linear-gradient(#272205,#080813
     ) no-repeat;
     display: flex;
     flex-direction: column;
