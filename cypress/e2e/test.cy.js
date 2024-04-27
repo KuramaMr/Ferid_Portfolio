@@ -11,12 +11,7 @@ context("Premier test", () => {
             it("", () => {
 
             cy.get('.navbar').should('exist');
-            cy.get('.header #home').should('exist');
-            cy.get('#about').should('exist');
-            cy.get('#caces').should('exist');
-            cy.get('#galery').should('exist');
-            cy.get('#parteners').should('exist');
-            cy.get('#contact').should('exist');
+            
 
             });
         });

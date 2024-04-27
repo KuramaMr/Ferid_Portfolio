@@ -3,11 +3,15 @@
 const slides = [
     {
         "image": "3groupeSMV.jpg",
-        "tagLine": "3ème groupes SMV"
+        "tagLine": "1ème groupe SMV préparateur de commandes"
     },
     {
         "image": "3groupeSMV2.jpg",
-        "tagLine": "3ème groupes SMV"
+        "tagLine": "2ème groupe SMV préparateur de commandes"
+    },
+    {
+        "image": "2emeGroupeSMV.jpg",
+        "tagLine": "3ème groupe SMV préparateur de commandes"
     }
 ]
 
