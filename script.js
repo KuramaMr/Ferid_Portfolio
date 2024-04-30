@@ -1,5 +1,3 @@
-/*** Test Script ***/
-
 const slides = [
     {
         "image": "3groupeSMV.jpg",
